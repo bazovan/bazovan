@@ -1,2 +1,1 @@
-# sorosh-robot
-Welcome to soroush-robot client repository.
+# Bazovan | A library to crerate and maintain Sourosh bots.
