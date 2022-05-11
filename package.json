@@ -1,8 +1,9 @@
 {
-  "name": "bazovan",
-  "version": "0.0.514",
+  "name": "@bazovan/bazovan",
+  "version": "0.0.515",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^16.4.12",
     "eventsource": "^1.1.0",
@@ -24,7 +25,6 @@
     "ts-jest": "^27.0.4",
     "typescript": "^4.3.5"
   },
-
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
@@ -36,5 +36,23 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
-  }
+  },
+  "description": "An open source library that makes it simple for you to create amazing soroush bots.",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazovan/bazovan.git"
+  },
+  "keywords": [
+    "robot",
+    "telegraf",
+    "soroush"
+  ],
+  "author": "Mehdi Rahimi me-dira@outlook.com",
+  "bugs": {
+    "url": "https://github.com/bazovan/bazovan/issues"
+  },
+  "homepage": "https://github.com/bazovan/bazovan#readme"
 }
