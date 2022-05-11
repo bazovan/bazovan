@@ -1,2 +1,1 @@
-# sorosh-client
-کلاینت پیام رسان سروش برای استفاده بر بستر جاواسکریپت
+# Bazovan | A library to crerate and maintain Sourosh bots.
