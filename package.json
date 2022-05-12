@@ -1,39 +1,43 @@
 {
   "name": "@bazovan/bazovan",
-  "version": "0.0.515",
-  "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "version": "0.0.515",
+  
   "license": "MIT",
-  "dependencies": {
-    "@types/node": "^16.4.12",
-    "eventsource": "^1.1.0",
-    "inversify": "^5.1.1",
-    "rxjs": "^7.3.0"
-  },
+
   "files": [
     "lib"
   ],
+
+  "dependencies": {
+    "@types/node": "^16.4.12",
+    "eventsource": "^1.1.0"
+  },
+
   "devDependencies": {
-    "@types/eventsource": "^1.1.6",
-    "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
-    "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
-    "jest": "^27.0.6",
+    "@types/eventsource": "^1.1.6",
+    "@types/jest": "^26.0.24",
+    "typescript": "^4.3.5",
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.4",
-    "typescript": "^4.3.5"
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6"
   },
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "eslint",
+
     "prepare": "npm run build",
     "prepublish": "tsc",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
+    
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
