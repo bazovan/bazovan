@@ -1,4 +1,4 @@
-export * from './connection';
+export * from './connectionOptions';
 
 export type SoroushFilter = () => void;
 export type SoroushEventType = {

@@ -1,4 +1,4 @@
-import {Constants} from '../../';
+import {Constants} from '@constants';
 
 /**
  * Save and convert token to any
