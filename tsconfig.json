@@ -16,6 +16,14 @@
     "outDir": "./lib",
     "baseUrl": "./",
     "incremental": true,
+
+    "paths": {
+      "@domain": ["src/domain"],
+      "@entity": ["src/domain/entity"],
+      "@types": ["src/infrastructure/types"],
+      "@constants": ["src/infrastructure/constants"],
+      "@interfaces": ["src/infrastructure/interfaces"],
+    }
   },
 
   "include": [
@@ -25,6 +33,5 @@
   "exclude": [
     "./node_modules",
     "./lib",
-    "./src/__tests__/**/*.test.ts"
   ]
 }
