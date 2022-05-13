@@ -2,11 +2,12 @@ import EventSource, {EventSourceInitDict} from 'eventsource';
 import {fromEvent, Observable} from 'rxjs';
 
 import {Token} from '@entity';
-import {ConnectionOptions} from '@types';
+import {Entity} from './Entity';
 
-export class Connection {
-  constructor(private connectionOpt: ConnectionOptions) {
-    this.token = new Token(connectionOpt.token);
+
+export class Connection extends Entity {
+  constructor(token: string) {
+    super(); this.token = new Token(token);
   }
 
   private eventSource: EventSource;

@@ -10,7 +10,8 @@
   "dependencies": {
     "eventsource": "^1.1.0",
     "module-alias-jest": "^0.0.3",
-    "rxjs": "^7.5.5"
+    "rxjs": "^7.5.5",
+    "tsyringe": "^4.6.0"
   },
   "devDependencies": {
     "@types/eventsource": "^1.1.6",
